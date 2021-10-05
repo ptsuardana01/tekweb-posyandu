@@ -46,4 +46,10 @@ Route::get('admin/event', function () {
     return view('admin.event');
 })->middleware(['auth'])->name('event');
 
+
+
+
+
+
+
 require __DIR__.'/auth.php';

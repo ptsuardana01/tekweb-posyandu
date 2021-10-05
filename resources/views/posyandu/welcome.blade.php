@@ -87,8 +87,8 @@
           </button>
         </div>
         <!--Right Col-->
-        <div class="w-full md:w-3/5 py-6 text-center ">
-          <img class="w-full md:w-2/3 z-50 ml-32 " src="{{ asset('img/logo.png') }}" />
+        <div class="w-full md:w-3/5 py-6 text-center">
+          <img class="w-full md:w-1/2 z-50 ml-48" src="{{ asset('img/logo.png') }}" />
         </div>
       </div>
     </div>
