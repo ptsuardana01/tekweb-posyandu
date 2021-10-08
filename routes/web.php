@@ -17,32 +17,32 @@ Route::get('/', [Home::class, 'index']);
 Route::get('/about', [Home::class, 'about']);
 
 //go to view dashboard
-Route::get('admin/dashboard', function () {
+Route::get('dashboard', function () {
     return view('admin.dashboard');
 })->middleware(['auth'])->name('dashboard');
 
 //go to view balita
-Route::get('admin/balita', function () {
+Route::get('balita', function () {
     return view('admin.balita');
 })->middleware(['auth'])->name('balita');
 
 //go to view ibuHamil
-Route::get('admin/ibu-hamil', function () {
+Route::get('ibu-hamil', function () {
     return view('admin.ibuHamil');
 })->middleware(['auth'])->name('ibuHamil');
 
 //go to view petugasPosyandu
-Route::get('admin/petugas-posyandu', function () {
+Route::get('petugas-posyandu', function () {
     return view('admin.petugasPosyandu');
 })->middleware(['auth'])->name('petugasPosyandu');
 
 //go to view statistikPosyandu
-Route::get('admin/statistik-posyandu', function () {
+Route::get('statistik-posyandu', function () {
     return view('admin.statistikPosyandu');
 })->middleware(['auth'])->name('statistikPosyandu');
 
 //go to view event
-Route::get('admin/event', function () {
+Route::get('event', function () {
     return view('admin.event');
 })->middleware(['auth'])->name('event');
 
