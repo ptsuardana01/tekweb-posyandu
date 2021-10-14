@@ -20,6 +20,7 @@
                                 <th class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">Alamat</th>
                                 <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Phone</th>
                                 <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Email</td>
+                                <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Aksi</td>
                             </tr>
                         </thead>
                         <tbody class="text-gray-700">
@@ -30,6 +31,12 @@
                                 <td class="text-left py-3 px-4"><a class="">Singaraja</a></td>
                                 <td class="text-left py-3 px-4"><a class="">081805555888</a></td>
                                 <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a></td>
+                                <td class="text-left py-3 px-4">
+                                    <div class="">
+                                        <a class="hover:text-blue-500 cursor-pointer">Update</a>
+                                        <a class="hover:text-blue-500 cursor-pointer">Delete</a>
+                                    </div>
+                                </td>
                             </tr>
                             <tr class="bg-gray-200">
                                 <td class="w-1/3 text-left py-3 px-4">Emma</td>
@@ -38,6 +45,12 @@
                                 <td class="text-left py-3 px-4"><a class="">Singaraja</a></td>
                                 <td class="text-left py-3 px-4"><a class="">081805555888</a></td>
                                 <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a></td>
+                                <td class="text-left py-3 px-4">
+                                    <div class="">
+                                        <a class="hover:text-blue-500 cursor-pointer">Update</a>
+                                        <a class="hover:text-blue-500 cursor-pointer">Delete</a>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="w-1/3 text-left py-3 px-4">Oliver</td>
@@ -46,6 +59,12 @@
                                 <td class="text-left py-3 px-4"><a class="">Singaraja</a></td>
                                 <td class="text-left py-3 px-4"><a class="">081805555888</a></td>
                                 <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a></td>
+                                <td class="text-left py-3 px-4">
+                                    <div class="">
+                                        <a class="hover:text-blue-500 cursor-pointer">Update</a>
+                                        <a class="hover:text-blue-500 cursor-pointer">Delete</a>
+                                    </div>
+                                </td>
                             </tr>
                         </tbody>
                     </table>

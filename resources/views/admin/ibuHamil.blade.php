@@ -32,7 +32,12 @@
                                 <td class="text-left py-3 px-4"><a class="">20 cm</a></td>
                                 <td class="text-left py-3 px-4"><a class="">2 kg</a></td>
                                 <td class="text-left py-3 px-4"><a class="">10 cm</a></td>
-                                <td class="text-left py-3 px-4"><a class="hover:text-blue-500">Delete Update</a></td>
+                                <td class="text-left py-3 px-4">
+                                    <div class="">
+                                        <a class="hover:text-blue-500 cursor-pointer">Update</a>
+                                        <a class="hover:text-blue-500 cursor-pointer">Delete</a>
+                                    </div>
+                                </td>
                             </tr>
                             <tr class="bg-gray-200">
                                 <td class="w-1/3 text-left py-3 px-4">2</td>
@@ -42,7 +47,12 @@
                                 <td class="text-left py-3 px-4"><a class="">20 cm</a></td>
                                 <td class="text-left py-3 px-4"><a class="">2 kg</a></td>
                                 <td class="text-left py-3 px-4"><a class="">10 cm</a></td>
-                                <td class="text-left py-3 px-4"><a class="hover:text-blue-500">Delete Update</a></td>
+                                <td class="text-left py-3 px-4">
+                                    <div class="">
+                                        <a class="hover:text-blue-500 cursor-pointer">Update</a>
+                                        <a class="hover:text-blue-500 cursor-pointer">Delete</a>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="w-1/3 text-left py-3 px-4">3</td>
@@ -52,7 +62,12 @@
                                 <td class="text-left py-3 px-4"><a class="">20 cm</a></td>
                                 <td class="text-left py-3 px-4"><a class="">2 kg</a></td>
                                 <td class="text-left py-3 px-4"><a class="">10 cm</a></td>
-                                <td class="text-left py-3 px-4"><a class="hover:text-blue-500">Delete Update</a></td>
+                                <td class="text-left py-3 px-4">
+                                    <div class="">
+                                        <a class="hover:text-blue-500 cursor-pointer">Update</a>
+                                        <a class="hover:text-blue-500 cursor-pointer">Delete</a>
+                                    </div>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
