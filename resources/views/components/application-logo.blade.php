@@ -1,1 +1,1 @@
-<img class="w-28" src="img/healthcare.png" alt="PosKita">
+<img class="w-28" src="{{ asset('img/healthcare.png') }}" alt="PosKita">
