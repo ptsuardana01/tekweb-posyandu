@@ -46,6 +46,9 @@
               <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#about">About</a>
             </li>
             <li class="mr-3">
+              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#eveninfo">Event & Info</a>
+            </li>
+            <li class="mr-3">
               <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#footer">Footer</a>
             </li>
           </ul>
@@ -154,49 +157,50 @@
         </div>
       </div>
     </section>
-    <section class="bg-white border-b py-8">
-      <div class="container mx-auto flex flex-wrap pt-4 pb-12">
-        <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-          Event & Info
-        </h1>
+    <section id="eveninfo" class="bg-white border-b py-8">
+
+        <div class="container mx-auto flex flex-wrap pt-4 pb-12">
+            <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+                Event & Info
+            </h1>
         <div class="w-full mb-4">
-          <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+            <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
         </div>
         <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-            <a href="#" class="flex flex-wrap no-underline hover:no-underline">
-              <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-                xGETTING STARTED
-              </p>
-              <div class="w-full font-bold text-xl text-gray-800 px-6">
-                Imunisasi Bersama di Kota Singaraja
-              </div>
-              <p class="text-gray-800 text-base px-6 mb-5">
-                Salah satu program dari PosKita untuk merangkul dan meratakan program Imunisasi untuk Balita di daerah Singaraja.
-              </p>
-            </a>
+            <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+                <a href="#" class="flex flex-wrap no-underline hover:no-underline">
+                    <p class="w-full text-gray-600 text-xs md:text-sm px-6">
+                        xGETTING STARTED
+                    </p>
+                    <div class="w-full font-bold text-xl text-gray-800 px-6">
+                        Imunisasi Bersama di Kota Singaraja
+                    </div>
+                    <p class="text-gray-800 text-base px-6 mb-5">
+                        Salah satu program dari PosKita untuk merangkul dan meratakan program Imunisasi untuk Balita di daerah Singaraja.
+                    </p>
+                </a>
           </div>
           <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
             <div class="flex items-center justify-start">
-              <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                Kunjungi
-              </button>
+                <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                    Kunjungi
+                </button>
             </div>
           </div>
         </div>
         <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-            <a href="#" class="flex flex-wrap no-underline hover:no-underline">
-              <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-                xGETTING STARTED
-              </p>
-              <div class="w-full font-bold text-xl text-gray-800 px-6">
-                Makanan Bergizi untuk Ibu Hamil
-              </div>
-              <p class="text-gray-800 text-base px-6 mb-5">
-                Kesehatan merupakan hal yg utama yg harus diperhatikan oleh semua ibu hamil. Salah satu faktor yg mempengaruhi kesehatan Ibu Hamil adalah dari segi makanan yg dikonsumsi sehari hari.
-              </p>
-            </a>
+            <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+                <a href="#" class="flex flex-wrap no-underline hover:no-underline">
+                    <p class="w-full text-gray-600 text-xs md:text-sm px-6">
+                        xGETTING STARTED
+                    </p>
+                    <div class="w-full font-bold text-xl text-gray-800 px-6">
+                        Makanan Bergizi untuk Ibu Hamil
+                    </div>
+                    <p class="text-gray-800 text-base px-6 mb-5">
+                        Kesehatan merupakan hal yg utama yg harus diperhatikan oleh semua ibu hamil. Salah satu faktor yg mempengaruhi kesehatan Ibu Hamil adalah dari segi makanan yg dikonsumsi sehari hari.
+                    </p>
+                </a>
           </div>
           <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
             <div class="flex items-center justify-center">

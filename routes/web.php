@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Home;
+use GuzzleHttp\Middleware;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,7 +16,6 @@ use App\Http\Controllers\Home;
 */
 
 Route::get('/', [Home::class, 'index']);
-Route::get('/about', [Home::class, 'about']);
 
 //go to view dashboard
 Route::get('dashboard', function () {
@@ -45,6 +46,13 @@ Route::get('statistik-posyandu', function () {
 Route::get('event', function () {
     return view('admin.event');
 })->middleware(['auth'])->name('event');
+
+//go to tambah data
+Route::group(['middleware' => ['auth']], function(){
+    Route::get('/tambah-data-balita', 'App\Http\Controllers\AdminControllers\TambahData\TambahDataBalita@index')->name('tambahDataBalita');
+    Route::get('/tambah-data-bumil', 'App\Http\Controllers\AdminControllers\TambahData\TambahDataBumil@index')->name('tambahDataBumil');
+    Route::get('/tambah-data-kader', 'App\Http\Controllers\AdminControllers\TambahData\TambahDataKader@index')->name('tambahDataKader');
+});
 
 
 
