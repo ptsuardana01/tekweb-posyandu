@@ -47,7 +47,7 @@
                 <i class="fas fa-female mr-3"></i>
                 Ibu Hamil
             </a>
-            <a href="{{route("petugasPosyandu")}}" class="{{(request()->routeIs('petugasPosyandu'))? 'active-nav-link' : ''}} flex items-center text-white opacity-75 hover:opacity-100 py-4 pl-6 nav-item">
+            <a href="{{route("kader")}}" class="{{(request()->routeIs('kader'))? 'active-nav-link' : ''}} flex items-center text-white opacity-75 hover:opacity-100 py-4 pl-6 nav-item">
                 <i class="fas fa-id-badge mr-3"></i>
                 Petugas Posyandu
             </a>
@@ -110,7 +110,7 @@
                     <i class="fas fa-female mr-3"></i>
                     Ibu Hamil
                 </a>
-                <a href="{{route("petugasPosyandu")}}" class="{{(request()->routeIs('petugasPosyandu'))? 'active-nav-link' : ''}} flex items-center text-white opacity-75 hover:opacity-100 py-2 pl-4 nav-item">
+                <a href="{{route("kader")}}" class="{{(request()->routeIs('kader'))? 'active-nav-link' : ''}} flex items-center text-white opacity-75 hover:opacity-100 py-2 pl-4 nav-item">
                     <i class="fas fa-id-badge mr-3"></i>
                     Petugas Posyandu
                 </a>
