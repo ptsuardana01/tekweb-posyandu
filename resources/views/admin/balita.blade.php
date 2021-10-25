@@ -16,8 +16,7 @@
                             <tr>
                                 <th class=" text-left py-3 px-4 uppercase font-semibold text-sm">#</th>
                                 <th class="w-1/5 text-left py-3 px-4 uppercase font-semibold text-sm">Nama Balita</th>
-                                <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Tempat Lahir</th>
-                                <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Tanggal Lahir</th>
+                                <th class="text-left py-3 px-4 uppercase font-semibold text-sm">TTL</th>
                                 <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Alamat</th>
                                 <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Orang tua</td>
                                 <th class="text-left py-3 px-4 uppercase font-semibold text-sm">NIK</td>
@@ -34,8 +33,7 @@
                             <tr>
                                 <td class=" text-left py-3 px-4">1</td>
                                 <td class="w-1/5 text-left py-3 px-4">Lian</td>
-                                <td class=" text-left py-3 px-4 text-sm">Singaraja</td>
-                                <td class=" text-left py-3 px-4 text-sm">10-10-2020</td>
+                                <td class=" text-left py-3 px-4 text-sm">Singaraja, 10-10-2020</td>
                                 <td class="text-left py-3 px-4 text-sm">Singaraja</td>
                                 <td class="text-left py-3 px-4 text-sm">
                                     <b>Ayah </b> : Ketut Garing <br>
@@ -61,8 +59,7 @@
                             <tr class="bg-gray-200">
                                 <td class=" text-left py-3 px-4">2</td>
                                 <td class="w-1/5 text-left py-3 px-4">Emma</td>
-                                <td class="text-left py-3 px-4 text-sm">Singaraja</td>
-                                <td class=" text-left py-3 px-4 text-sm">10-10-2020</td>
+                                <td class=" text-left py-3 px-4 text-sm">Singaraja, 10-10-2020</td>
                                 <td class="text-left py-3 px-4 text-sm">Singaraja</td>
                                 <td class="text-left py-3 px-4 text-sm">
                                     <b>Ayah </b> : Ketut Garing <br>
@@ -88,8 +85,7 @@
                             <tr>
                                 <td class=" text-left py-3 px-4">3</td>
                                 <td class="w-1/5 text-left py-3 px-4">Oliver</td>
-                                <td class="text-left py-3 px-4 text-sm">Singaraja</td>
-                                <td class=" text-left py-3 px-4 text-sm">10-10-2020</td>
+                                <td class=" text-left py-3 px-4 text-sm">Singaraja, 10-10-2020</td>
                                 <td class="text-left py-3 px-4 text-sm">Singaraja</td>
                                 <td class="text-left py-3 px-4 text-sm">
                                     <b>Ayah </b> : Ketut Garing <br>

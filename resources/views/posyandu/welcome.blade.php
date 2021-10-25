@@ -79,7 +79,7 @@
           <p class="leading-normal text-2xl mb-8">
             Situs untuk mendapatkan informasi terkait data Posyandu di sekitar Singaraja.
           </p>
-          <a href="{{route('register')}}" class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg z-10 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+          <a href="{{route('register')}}" class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg z-1 0 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
             Sign Up
           </a>
         </div>

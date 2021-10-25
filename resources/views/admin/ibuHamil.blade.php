@@ -15,8 +15,7 @@
                             <th class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">#</th>
                             <th class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">Nama Bumil</th>
                             <th class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">NIK</th>
-                            <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Tempat Lahir</th>
-                            <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Tanggal Lahir</th>
+                            <th class="text-left py-3 px-4 uppercase font-semibold text-sm">TTL</th>
                             <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Alamat</th>
                             <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Telp</td>
                             <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Email</td>
@@ -32,8 +31,7 @@
                             <td class="w-1/3 text-left py-3 px-4">1</td>
                             <td class="w-1/3 text-left py-3 px-4">Lian</td>
                             <td class="w-1/3 text-left py-3 px-4">2015101008</td>
-                            <td class=" text-left py-3 px-4 text-sm">Singaraja</td>
-                            <td class=" text-left py-3 px-4 text-sm">10-10-2020</td>
+                            <td class=" text-left py-3 px-4 text-sm">Singaraja, 10-10-2020</td>
                             <td class="text-left py-3 px-4">Singaraja</td>
                             <td class="text-left py-3 px-4 text-sm">081805225271</td>
                             <td class="text-left py-3 px-4 text-sm"><a href="">ptsuardana01@gmail.com</a></td>
@@ -52,8 +50,7 @@
                             <td class="w-1/3 text-left py-3 px-4">2</td>
                             <td class="w-1/3 text-left py-3 px-4">Emma</td>
                             <td class="w-1/3 text-left py-3 px-4">2015101008</td>
-                            <td class=" text-left py-3 px-4 text-sm">Singaraja</td>
-                            <td class=" text-left py-3 px-4 text-sm">10-10-2020</td>
+                            <td class=" text-left py-3 px-4 text-sm">Singaraja, 10-10-2020</td>
                             <td class="text-left py-3 px-4">Singaraja</td>
                             <td class="text-left py-3 px-4 text-sm">081805225271</td>
                             <td class="text-left py-3 px-4 text-sm"><a href="">ptsuardana01@gmail.com</a></td>
@@ -72,8 +69,7 @@
                             <td class="w-1/3 text-left py-3 px-4">3</td>
                             <td class="w-1/3 text-left py-3 px-4">Oliver</td>
                             <td class="w-1/3 text-left py-3 px-4">2015101008</td>
-                            <td class=" text-left py-3 px-4 text-sm">Singaraja</td>
-                            <td class=" text-left py-3 px-4 text-sm">10-10-2020</td>
+                            <td class=" text-left py-3 px-4 text-sm">Singaraja, 10-10-2020</td>
                             <td class="text-left py-3 px-4">Singaraja</td>
                             <td class="text-left py-3 px-4 text-sm">081805225271</td>
                             <td class="text-left py-3 px-4 text-sm"><a href="">ptsuardana01@gmail.com</a></td>
