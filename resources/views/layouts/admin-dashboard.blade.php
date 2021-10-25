@@ -19,7 +19,7 @@
         .cta-btn { color: #0071b3; }
         .upgrade-btn { background: #0070cc; }
         .upgrade-btn:hover { background: #005ca7; }
-        .active-nav-link { background: #0070cc; }
+        .active-nav-link { background: #0070cc; opacity: 100%;}
         .nav-item:hover { background: #005ca7; }
         .account-link:hover { background: #3d68ff; }
     </style>
@@ -39,7 +39,7 @@
                 <i class="fas fa-tachometer-alt mr-3"></i>
                 Dashboard
             </a>
-            <a href="{{route("balita")}}" class="{{(request()->routeIs('balita'))? 'active-nav-link' : ''}} flex items-center text-white py-4 pl-6 nav-item">
+            <a href="{{route("balita")}}" class="{{(request()->routeIs('balita'))? 'active-nav-link' : ''}} flex items-center text-white opacity-75 py-4 pl-6 nav-item">
                 <i class="fas fa-baby mr-3"></i>
                 Balita
             </a>
