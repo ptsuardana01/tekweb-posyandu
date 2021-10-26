@@ -12,16 +12,16 @@
                     <div class="">
                         <h2 class="text-lg font-semibold">Data Balita</h2>
                         <div class="mb-3">
-                            <label class="block text-sm text-gray-600" for="name">Name</label>
-                            <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="name" name="name" type="text" required="" placeholder="Nama Balita">
+                            <label class="block text-sm text-gray-600" for="nama">Nama</label>
+                            <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="nama" name="nama" type="text" required="" placeholder="Nama Balita">
                         </div>
                         <div class="mb-3">
-                            <label class="block text-sm text-gray-600" for="loclahir">Tempat Lahir</label>
-                            <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="loclahir" name="loclahir" type="text" required="" placeholder="Tempat Lahir Balita">
+                            <label class="block text-sm text-gray-600" for="tmpt_lahir">Tempat Lahir</label>
+                            <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="tmpt_lahir" name="tmpt_lahir" type="text" required="" placeholder="Tempat Lahir Balita">
                         </div>
                         <div class="mb-3">
-                            <label class="block text-sm text-gray-600" for="tgllahir">Tanggal Lahir</label>
-                            <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="tgllahir" name="tgllahir" type="date" required="" placeholder="">
+                            <label class="block text-sm text-gray-600" for="tgl_lahir">Tanggal Lahir</label>
+                            <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="tgl_lahir" name="tgl_lahir" type="date" required="" placeholder="">
                         </div>
                         <div class="mb-3">
                             <label class="block text-sm text-gray-600" for="alamat">Alamat</label>
@@ -30,20 +30,20 @@
 
                         <h2 class="text-lg font-semibold mt-5">Data Orang Tua</h2>
                         <div class="mb-3">
-                            <label class="block text-sm text-gray-600" for="nameDad">Nama Ayah</label>
-                            <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="nameDad" name="nameDad" type="text" required="" placeholder="Masukkan Nama Ayah">
+                            <label class="block text-sm text-gray-600" for="nama_ayah">Nama Ayah</label>
+                            <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="nama_ayah" name="nama_ayah" type="text" required="" placeholder="Masukkan Nama Ayah">
                         </div>
                         <div class="mb-3">
-                            <label class="block text-sm text-gray-600" for="nikDad">NIK Ayah</label>
-                            <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="nikDad" name="nikDad" type="text" required="" placeholder="Masukkan NIK Ayah">
+                            <label class="block text-sm text-gray-600" for="nik_ayah">NIK Ayah</label>
+                            <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="nik_ayah" name="nik_ayah" type="text" required="" placeholder="Masukkan NIK Ayah">
                         </div>
                         <div class="mb-3">
-                            <label class="block text-sm text-gray-600" for="nameMom">Nama Ibu</label>
-                            <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="nameMom" name="nameMom" type="text" required="" placeholder="Masukkan Nama Ibu">
+                            <label class="block text-sm text-gray-600" for="nama_ibu">Nama Ibu</label>
+                            <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="nama_ibu" name="nama_ibu" type="text" required="" placeholder="Masukkan Nama Ibu">
                         </div>
                         <div class="mb-3">
-                            <label class="block text-sm text-gray-600" for="nikMom">NIK Ibu</label>
-                            <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="nikMom" name="nikMom" type="text" required="" placeholder="Masukkan NIK Ibu">
+                            <label class="block text-sm text-gray-600" for="nik_ibu">NIK Ibu</label>
+                            <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="nik_ibu" name="nik_ibu" type="text" required="" placeholder="Masukkan NIK Ibu">
                         </div>
                         <div class="mb-3">
                             <label class="block text-sm text-gray-600" for="email">Email</label>
@@ -59,18 +59,18 @@
                         <h2 class="text-lg font-semibold">Keterangan Balita</h2>
                         <div class="grid grid-cols-2 gap-x-10 gap-y-3">
                             <div class="">
-                                <label class="block text-sm text-gray-600" for="age">Umur</label>
-                                <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="age" name="age" type="number" required="" placeholder="Umur Balita">
+                                <label class="block text-sm text-gray-600" for="umur">Umur</label>
+                                <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="umur" name="umur" type="number" required="" placeholder="Umur Balita">
                             </div>
 
                             <div class="">
-                                <label class="block text-sm text-gray-600" for="tinggi">Tinggi</label>
-                                <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="tinggi" name="tinggi" type="number" required="" placeholder="Tinggi Balita">
+                                <label class="block text-sm text-gray-600" for="tb">Tinggi</label>
+                                <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="tb" name="tb" type="number" required="" placeholder="Tinggi Balita">
                             </div>
 
                             <div class="">
-                                <label class="block text-sm text-gray-600" for="berat">Berat</label>
-                                <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="berat" name="berat" type="number" required="" placeholder="Berat Balita">
+                                <label class="block text-sm text-gray-600" for="bb">Berat</label>
+                                <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="bb" name="bb" type="number" required="" placeholder="Berat Balita">
                             </div>
 
                             <div class="">

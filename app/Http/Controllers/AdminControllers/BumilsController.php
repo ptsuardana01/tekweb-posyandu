@@ -15,7 +15,7 @@ class BumilsController extends Controller
     public function index()
     {
         $bumils = Bumils::all();
-        return view('admin.ibuHamil',[
+        return view('admin.ibuHamil', [
             'bumils' => $bumils
         ]);
     }
@@ -24,8 +24,10 @@ class BumilsController extends Controller
     public function create()
     {
         $bumil = Bumils::all();
-        return view('admin.ibuHamil', [
-            'bumil' => $bumil
+        $kaders = Kaders::all();
+        return view('admin.tambahDataBumil', [
+            'bumil' => $bumil,
+            'kaders' => $kaders,
         ]);
     }
 
@@ -47,11 +49,12 @@ class BumilsController extends Controller
         ]);
 
         Bumils::create($dataBumil);
-        return redirect('//ibu-hamil');
+        return redirect('/ibu-hamil');
     }
 
 
-    public function show() {
+    public function show()
+    {
         return view('admin.tambahDataBumil');
     }
 

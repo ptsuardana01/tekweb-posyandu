@@ -8,7 +8,9 @@
     <div class="py-10">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <form class="p-10 bg-white rounded shadow-xl grid lg:grid-cols-2 gap-10">
+                <form action="{{ route('addBumils') }}" method="POST" class="p-10 bg-white rounded shadow-xl grid lg:grid-cols-2 gap-10">
+
+                    @csrf
                     <div class="">
                         <h2 class="text-lg font-semibold">Data Ibu Hamil</h2>
                         <div class="mb-3">
@@ -101,9 +103,9 @@
                                 <label class="block text-sm text-gray-600" for="kader_id_bumil">Petugas Posyandu</label>
                                 <select class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="kader_id_bumil" name="kader_id_bumil" type="text" placeholder="Petugas">
                                     <option value="">-- Pilih Kader --</option>
-                                    <option name="" id="">kader</option>
-                                    <option name="" id="">kader</option>
-                                    <option name="" id="">kader</option>
+                                    @foreach ($kaders as $kader)
+                                    <option value="{{$kader->id}}">{{$kader->nama}}</option>
+                                    @endforeach
                                 </select>
                                 @error('kader_id_bumil')
                                 <p class="text-red-500 text-sm mt-2">{{$message}}</p>

@@ -51,15 +51,15 @@ Route::group(['middleware' => ['auth']], function () {
 
 Route::group(['middleware' => ['auth']], function () {
     //menampilkan tambah data balita
-    Route::get('/tambah-data-balita', [BumilsController::class, 'show'])->name('tambahDataBalita');
+    Route::get('/tambah-data-balita', [BalitasController::class, 'show'])->name('tambahDataBalita');
     //menampilkan tambah data ibu hamil
     Route::get('/tambah-data-bumil', [BumilsController::class, 'create'])->name('addBumils');
-    Route::get('/tambah-data-bumil', [BumilsController::class, 'store'])->name('addBumils');
-    Route::get('/tambah-data-bumil', [BumilsController::class, 'show'])->name('tambahDataBumil');
+    Route::post('/tambah-data-bumil', [BumilsController::class, 'store'])->name('addBumils');
+    Route::get('/show-data-bumil', [BumilsController::class, 'show'])->name('tambahDataBumil');
     //menampilkan tambah data kader
     Route::get('/tambah-data-kader', [KadersController::class, 'create'])->name('addKaders');
     Route::post('/tambah-data-kader', [KadersController::class, 'store'])->name('addKaders');
-    Route::get('/tambah-data-kader', [KadersController::class, 'show'])->name('tambahDataKader');
+    Route::get('/show-data-kader', [KadersController::class, 'show'])->name('tambahDataKader');
 });
 
 //go to view statistikPosyandu
