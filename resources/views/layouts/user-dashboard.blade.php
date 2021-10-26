@@ -16,22 +16,22 @@
 
 	<!--Header-->
 	<div class="w-full m-0 p-0 bg-cover bg-bottom" style="background-image:url('cover.jpg'); height: 60vh; max-height:460px;">
-            <header class="w-full items-center bg-gradient-to-r from-green-400 to-blue-500 py-2 px-6 hidden sm:flex z-10">
+            <header class="w-full items-center bg-white py-2 px-6 hidden sm:flex z-10">
                 <div class="w-1/2 flex">
-                    <img src="{{ asset('img/healthcare2.png') }}" alt="" class="w-12">
+                    <img src="{{ asset('img/healthcare.png') }}" alt="" class="w-12">
                     <div class="flex w-1/2 pl-4 text-sm">
                         <ul class="list-reset flex justify-between flex-1 md:flex-none items-center">
                             <li class="mr-2">
-                            <a class="inline-block py-2 px-2 text-white no-underline hover:underline" href="post.html">POST</a>
+                            <a class="inline-block py-2 px-2 text-blue-500 no-underline hover:underline" href="post.html">POST</a>
                             </li>
                             <li class="mr-2">
-                            <a class="inline-block text-gray-700 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="#">LINK</a>
+                            <a class="inline-block text-gray-700 no-underline hover:text-blue-200 hover:underline py-2 px-2" href="#">LINK</a>
                             </li>
                             <li class="mr-2">
-                            <a class="inline-block text-gray-700 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="#">LINK</a>
+                            <a class="inline-block text-gray-700 no-underline hover:text-blue-200 hover:underline py-2 px-2" href="#">LINK</a>
                             </li>
                             <li class="mr-2">
-                            <a class="inline-block text-gray-700 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="post_vue.html">POST_VUE</a>
+                            <a class="inline-block text-gray-700 no-underline hover:text-blue-200 hover:underline py-2 px-2" href="post_vue.html">POST_VUE</a>
                             </li>
                         </ul>
                     </div>
@@ -53,10 +53,10 @@
 			<div class="container max-w-4xl mx-auto pt-10 md:pt-28 text-center break-normal">
 				<!--Title-->
 
-                    <p class="text-white font-extrabold text-3xl md:text-5xl">
+                    <span class="text-blue-600 font-extrabold text-3xl md:text-5xl">
 						Posyandu Kita Bersama
-					</p>
-					<p class="text-xl md:text-2xl text-gray-500">Situs untuk Mendapatkan infomasi terkait status Posyandu</p>
+					</span>
+					<p class="text-xl md:text-2xl text-green-400">Situs untuk Mendapatkan infomasi terkait status Posyandu</p>
 			</div>
 		</div>
 
@@ -87,27 +87,18 @@
 
 				<div class="bg-gray-200 w-full text-xl md:text-2xl text-gray-800 leading-normal rounded-t">
 
-				<!--Lead Card-->
-                    {{$slot}}
-				<!--/ Post Content-->
+                    <!--Lead Card-->
+                        {{$lead}}
+                    <!--/ Post Content-->
+                </div>
 
 			</div>
 
-
-				<!--Subscribe-->
-				<div class="container font-sans bg-green-100 rounded mt-8 p-4 md:p-24 text-center">
-					<h2 class="font-bold break-normal text-2xl md:text-4xl">Subscribe to Ghostwind CSS</h2>
-					<h3 class="font-bold break-normal font-normal text-gray-600 text-base md:text-xl">Get the latest posts delivered right to your inbox</h3>
-					<div class="w-full text-center pt-4">
-						<form action="#">
-							<div class="max-w-xl mx-auto p-1 pr-0 flex flex-wrap items-center">
-								<input type="email" placeholder="youremail@example.com" class="flex-1 appearance-none rounded shadow p-3 text-gray-600 mr-2 focus:outline-none">
-								<button type="submit" class="flex-1 mt-4 md:mt-0 block md:inline-block appearance-none bg-green-500 text-white text-base font-semibold tracking-wider uppercase py-4 rounded shadow hover:bg-green-400">Subscribe</button>
-							</div>
-						</form>
-					</div>
-				</div>
-				<!-- /Subscribe-->
+                <div class="">
+                    <!--Search-->
+                        {{$search}}
+                    <!-- /Search-->
+                </div>
 
 
 				<!--Author-->

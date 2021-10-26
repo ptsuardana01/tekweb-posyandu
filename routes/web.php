@@ -26,9 +26,9 @@ Route::get('/', [Home::class, 'index']);
 //     return view('layouts.user-dashboard');
 // })->name('user-dashboard');
 
-Route::group(['middleware' => ['auth']], function(){
-    Route::get('/dashboard', 'App\Http\Controllers\DashboardController@index')->name('dashboard');
-});
+// Route::group(['middleware' => ['auth']], function(){
+//     Route::get('/dashboard', 'App\Http\Controllers\DashboardController@index')->name('dashboard');
+// });
 
 Route::group(['middleware' => ['auth']], function(){
     Route::get('/dashboard', 'App\Http\Controllers\DashboardController@index')->name('dashboard');

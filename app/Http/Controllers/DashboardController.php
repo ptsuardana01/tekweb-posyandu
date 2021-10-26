@@ -9,9 +9,9 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        if(Auth::user()->hasRole('user')) {
-            return view('user.userDashboard');
-        } else if(Auth::admin()->hasRole('admin')) {
+        if (Auth::user()->hasRole('user')) {
+            return view('user.userShowData');
+        } elseif (Auth::user()->hasRole('admin')) {
             return view('admin.dashboard');
         }
     }
