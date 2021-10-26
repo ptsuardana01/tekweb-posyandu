@@ -18,30 +18,24 @@ use GuzzleHttp\Middleware;
 Route::get('/', [Home::class, 'index']);
 
 //go to view dashboard
-Route::get('dashboard', function () {
-    return view('admin.dashboard');
-})->middleware(['auth'])->name('dashboard');
+// Route::get('dashboard', function () {
+//     return view('admin.dashboard');
+// })->middleware(['auth'])->name('dashboard');
 
-//go to view balita
-// Route::get('balita', function () {
-//     return view('admin.balita');
-// })->middleware(['auth'])->name('balita');
+// Route::get('/user/dashboard', function () {
+//     return view('layouts.user-dashboard');
+// })->name('user-dashboard');
 
 Route::group(['middleware' => ['auth']], function(){
+    Route::get('/dashboard', 'App\Http\Controllers\DashboardController@index')->name('dashboard');
+});
+
+Route::group(['middleware' => ['auth']], function(){
+    Route::get('/dashboard', 'App\Http\Controllers\DashboardController@index')->name('dashboard');
     Route::get('/balita', 'App\Http\Controllers\AdminControllers\BalitasController@index')->name('balita');
     Route::get('/ibu-hamil', 'App\Http\Controllers\AdminControllers\BumilsController@index')->name('ibuHamil');
     Route::get('/petugas-posyandu', 'App\Http\Controllers\AdminControllers\KadersController@index')->name('kader');
 });
-
-//go to view ibuHamil
-// Route::get('ibu-hamil', function () {
-//     return view('admin.ibuHamil');
-// })->middleware(['auth'])->name('ibuHamil');
-
-//go to view petugasPosyandu
-// Route::get('petugas-posyandu', function () {
-//     return view('admin.petugasPosyandu');
-// })->middleware(['auth'])->name('petugasPosyandu');
 
 //go to view statistikPosyandu
 Route::get('statistik-posyandu', function () {

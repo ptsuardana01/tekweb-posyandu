@@ -7,7 +7,7 @@
 
     <div class="py-16 w-auto relative z-0 overflow-x-auto">
         <a href="{{route("tambahDataBumil")}}" class="p-2 px-4 bg-green-500 absolute top-2 text-white rounded-full shadow-sm hover:bg-green-700" type="submit"><i class="mr-1 fas fa-plus-circle"></i> Tambah data Ibu Hamil</a>
-        <div class="w-auto mx-auto sm:px-0.5 lg:px-1 overflow-visible">
+        <div class="w-auto mx-auto sm:px-0.5 lg:px-1 overflow-x-scroll">
             <div class="bg-white shadow sm:rounded-lg">
                 <table class="min-w-full bg-white">
                     <thead class="bg-pink-700 text-white">
