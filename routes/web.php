@@ -2,6 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Home;
+use App\Http\Controllers\AdminControllers\BalitasController;
+use App\Http\Controllers\AdminControllers\BumilsController;
+use App\Http\Controllers\AdminControllers\KadersController;
+use App\Models\Balitas;
+use App\Models\Bumils;
+use App\Models\Kaders;
 use GuzzleHttp\Middleware;
 
 /*
@@ -22,19 +28,38 @@ Route::get('/', [Home::class, 'index']);
 //     return view('admin.dashboard');
 // })->middleware(['auth'])->name('dashboard');
 
-// Route::get('/user/dashboard', function () {
-//     return view('layouts.user-dashboard');
-// })->name('user-dashboard');
 
-// Route::group(['middleware' => ['auth']], function(){
-//     Route::get('/dashboard', 'App\Http\Controllers\DashboardController@index')->name('dashboard');
-// });
-
-Route::group(['middleware' => ['auth']], function(){
+Route::group(['middleware' => ['auth']], function () {
+    //menampilkan dashboard
     Route::get('/dashboard', 'App\Http\Controllers\DashboardController@index')->name('dashboard');
+    //menampilkan balita view
     Route::get('/balita', 'App\Http\Controllers\AdminControllers\BalitasController@index')->name('balita');
+    //menampilkan ibu hamil view
     Route::get('/ibu-hamil', 'App\Http\Controllers\AdminControllers\BumilsController@index')->name('ibuHamil');
+    //menampilkan kader view
     Route::get('/petugas-posyandu', 'App\Http\Controllers\AdminControllers\KadersController@index')->name('kader');
+});
+
+Route::group(['middleware' => ['auth']], function () {
+    //menghapus data balita
+    Route::delete('/delete-balita/{id}', 'App\Http\Controllers\AdminControllers\BalitasController@destroy')->name('delete-balita');
+    //menghapus data ibu hamil
+    Route::delete('/delete-bumil/{id}', 'App\Http\Controllers\AdminControllers\BumilsController@destroy')->name('delete-bumil');
+    //menghapus data kader
+    Route::delete('/delete-kader/{id}', 'App\Http\Controllers\AdminControllers\KadersController@destroy')->name('delete-kader');
+});
+
+Route::group(['middleware' => ['auth']], function () {
+    //menampilkan tambah data balita
+    Route::get('/tambah-data-balita', [BumilsController::class, 'show'])->name('tambahDataBalita');
+    //menampilkan tambah data ibu hamil
+    Route::get('/tambah-data-bumil', [BumilsController::class, 'create'])->name('addBumils');
+    Route::get('/tambah-data-bumil', [BumilsController::class, 'store'])->name('addBumils');
+    Route::get('/tambah-data-bumil', [BumilsController::class, 'show'])->name('tambahDataBumil');
+    //menampilkan tambah data kader
+    Route::get('/tambah-data-kader', [KadersController::class, 'create'])->name('addKaders');
+    Route::post('/tambah-data-kader', [KadersController::class, 'store'])->name('addKaders');
+    Route::get('/tambah-data-kader', [KadersController::class, 'show'])->name('tambahDataKader');
 });
 
 //go to view statistikPosyandu
@@ -47,12 +72,6 @@ Route::get('event', function () {
     return view('admin.event');
 })->middleware(['auth'])->name('event');
 
-//go to tambah data
-Route::group(['middleware' => ['auth']], function(){
-    Route::get('/tambah-data-balita', 'App\Http\Controllers\AdminControllers\TambahData\TambahDataBalita@index')->name('tambahDataBalita');
-    Route::get('/tambah-data-bumil', 'App\Http\Controllers\AdminControllers\TambahData\TambahDataBumil@index')->name('tambahDataBumil');
-    Route::get('/tambah-data-kader', 'App\Http\Controllers\AdminControllers\TambahData\TambahDataKader@index')->name('tambahDataKader');
-});
 
 
 
@@ -60,4 +79,4 @@ Route::group(['middleware' => ['auth']], function(){
 
 
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';

@@ -17,4 +17,19 @@ class BalitasController extends Controller
             'balitas' => $balitas
         ]);
     }
+
+
+
+
+    public function show() {
+        return view('admin.tambahDataBalita');
+    }
+
+
+    public function destroy($id)
+    {
+        Balitas::destroy(Balitas::find($id)->id);
+        Balitas::destroy($id);
+        return back();
+    }
 }

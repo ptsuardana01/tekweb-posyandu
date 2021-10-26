@@ -59,7 +59,11 @@
                                 <td class="text-left py-3 px-4">
                                     <div class="flex w-full">
                                         <a class="mr-2 p-2 bg-yellow-300 text-sm rounded-md hover:bg-yellow-500 hover:text-white cursor-pointer">Update</a>
-                                        <a class="p-2 bg-red-300 text-sm rounded-md hover:bg-red-500 hover:text-white cursor-pointer">Delete</a>
+                                        <form action="{{ route('delete-balita', ['id'=>$bayi->id]) }}" method="POST" class="inline">
+                                            @csrf
+                                            @method('delete')
+                                            <button onclick="return confirm('Apakah anda yakin menghapus akun ini ?')" class="p-2 bg-red-300 text-sm rounded-md hover:bg-red-500 hover:text-white cursor-pointer">Delete</button>
+                                        </form>
                                     </div>
                                 </td>
                             </tr>

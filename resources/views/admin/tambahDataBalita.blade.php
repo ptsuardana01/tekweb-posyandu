@@ -78,6 +78,19 @@
                                 <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="lika" name="lika" type="number" required="" placeholder="Lingkar Kepala Balita">
                             </div>
 
+                            <div class="">
+                                <label class="block text-sm text-gray-600" for="kader_id_balita">Petugas Posyandu</label>
+                                <select class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="kader_id_balita" name="kader_id_balita" type="text" placeholder="Petugas">
+                                    <option value="">-- Pilih Kader --</option>
+                                    <option name="" id="">kader</option>
+                                    <option name="" id="">kader</option>
+                                    <option name="" id="">kader</option>
+                                </select>
+                                @error('kader_id_balita')
+                                <p class="text-red-500 text-sm mt-2">{{$message}}</p>
+                                @enderror
+                            </div>
+
                         </div>
                     </div>
 
