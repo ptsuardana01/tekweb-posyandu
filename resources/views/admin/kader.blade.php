@@ -25,9 +25,13 @@
                         </thead>
                         <tbody class="text-gray-700">
 
+                            @php
+                                $n = 1;
+                            @endphp
+
                             @foreach ($kaders as $kader)
                             <tr>
-                                <td class="text-left py-3 px-4">1</td>
+                                <td class="text-left py-3 px-4">{{$n++}}</td>
                                 <td class="w-1/3 text-left py-3 px-4">{{$kader->nama}}</td>
                                 <td class=" text-left py-3 px-4">{{$kader->nik}}</td>
                                 <td class="text-left py-3 px-4 text-sm"><a class="">{{$kader->tmpt_lahir}}, {{$kader->tgl_lahir}}</a></td>

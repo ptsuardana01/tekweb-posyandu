@@ -37,7 +37,7 @@
                             @foreach ($balitas as $bayi)
 
                             <tr>
-                                <td class=" text-left py-3 px-4">1</td>
+                                <td class=" text-left py-3 px-4">{{$n++}}</td>
                                 <td class="w-1/5 text-left py-3 px-4">{{$bayi->nama}}</td>
                                 <td class=" text-left py-3 px-4 text-sm">{{$bayi->tmpt_lahir}}, {{$bayi->tgl_lahir}}</td>
                                 <td class="text-left py-3 px-4 text-sm">{{$bayi->alamat}}</td>

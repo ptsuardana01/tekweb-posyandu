@@ -14,44 +14,74 @@
                         <div class="mb-3">
                             <label class="block text-sm text-gray-600" for="nama">Nama</label>
                             <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="nama" name="nama" type="text" required="" placeholder="Nama Balita">
+                            @error('kader_id_bumil')
+                                <p class="text-red-500 text-sm mt-2">{{$message}}</p>
+                            @enderror
                         </div>
                         <div class="mb-3">
                             <label class="block text-sm text-gray-600" for="tmpt_lahir">Tempat Lahir</label>
                             <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="tmpt_lahir" name="tmpt_lahir" type="text" required="" placeholder="Tempat Lahir Balita">
+                            @error('kader_id_bumil')
+                                <p class="text-red-500 text-sm mt-2">{{$message}}</p>
+                            @enderror
                         </div>
                         <div class="mb-3">
                             <label class="block text-sm text-gray-600" for="tgl_lahir">Tanggal Lahir</label>
                             <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="tgl_lahir" name="tgl_lahir" type="date" required="" placeholder="">
+                            @error('kader_id_bumil')
+                                <p class="text-red-500 text-sm mt-2">{{$message}}</p>
+                            @enderror
                         </div>
                         <div class="mb-3">
                             <label class="block text-sm text-gray-600" for="alamat">Alamat</label>
                             <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="alamat" name="alamat" type="text" required="" placeholder="Masukkan Alamat Balita">
+                            @error('kader_id_bumil')
+                                <p class="text-red-500 text-sm mt-2">{{$message}}</p>
+                            @enderror
                         </div>
 
                         <h2 class="text-lg font-semibold mt-5">Data Orang Tua</h2>
                         <div class="mb-3">
                             <label class="block text-sm text-gray-600" for="nama_ayah">Nama Ayah</label>
                             <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="nama_ayah" name="nama_ayah" type="text" required="" placeholder="Masukkan Nama Ayah">
+                            @error('kader_id_bumil')
+                                <p class="text-red-500 text-sm mt-2">{{$message}}</p>
+                            @enderror
                         </div>
                         <div class="mb-3">
                             <label class="block text-sm text-gray-600" for="nik_ayah">NIK Ayah</label>
                             <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="nik_ayah" name="nik_ayah" type="text" required="" placeholder="Masukkan NIK Ayah">
+                            @error('kader_id_bumil')
+                                <p class="text-red-500 text-sm mt-2">{{$message}}</p>
+                            @enderror
                         </div>
                         <div class="mb-3">
                             <label class="block text-sm text-gray-600" for="nama_ibu">Nama Ibu</label>
                             <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="nama_ibu" name="nama_ibu" type="text" required="" placeholder="Masukkan Nama Ibu">
+                            @error('kader_id_bumil')
+                                <p class="text-red-500 text-sm mt-2">{{$message}}</p>
+                            @enderror
                         </div>
                         <div class="mb-3">
                             <label class="block text-sm text-gray-600" for="nik_ibu">NIK Ibu</label>
                             <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="nik_ibu" name="nik_ibu" type="text" required="" placeholder="Masukkan NIK Ibu">
+                            @error('kader_id_bumil')
+                                <p class="text-red-500 text-sm mt-2">{{$message}}</p>
+                            @enderror
                         </div>
                         <div class="mb-3">
                             <label class="block text-sm text-gray-600" for="email">Email</label>
                             <input class="w-full px-5  py-1 text-gray-700 bg-gray-200 rounded" id="email" name="email" type="text" required="" placeholder="Masukkan Email Aktif">
+                            @error('kader_id_bumil')
+                                <p class="text-red-500 text-sm mt-2">{{$message}}</p>
+                            @enderror
                         </div>
                         <div class="mb-3">
                             <label class="block text-sm text-gray-600" for="telp">Telp</label>
                             <input class="w-full px-5  py-1 text-gray-700 bg-gray-200 rounded" id="telp" name="telp" type="tel" required="" placeholder="Masukkan Nomor Telp Aktif">
+                            @error('kader_id_bumil')
+                                <p class="text-red-500 text-sm mt-2">{{$message}}</p>
+                            @enderror
                         </div>
                     </div>
 
@@ -61,21 +91,33 @@
                             <div class="">
                                 <label class="block text-sm text-gray-600" for="umur">Umur</label>
                                 <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="umur" name="umur" type="number" required="" placeholder="Umur Balita">
+                                @error('kader_id_bumil')
+                                <p class="text-red-500 text-sm mt-2">{{$message}}</p>
+                                @enderror
                             </div>
 
                             <div class="">
                                 <label class="block text-sm text-gray-600" for="tb">Tinggi</label>
                                 <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="tb" name="tb" type="number" required="" placeholder="Tinggi Balita">
+                                @error('kader_id_bumil')
+                                <p class="text-red-500 text-sm mt-2">{{$message}}</p>
+                                @enderror
                             </div>
 
                             <div class="">
                                 <label class="block text-sm text-gray-600" for="bb">Berat</label>
                                 <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="bb" name="bb" type="number" required="" placeholder="Berat Balita">
+                                @error('kader_id_bumil')
+                                <p class="text-red-500 text-sm mt-2">{{$message}}</p>
+                                @enderror
                             </div>
 
                             <div class="">
                                 <label class="block text-sm text-gray-600" for="lika">Lingkar Kepala</label>
                                 <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="lika" name="lika" type="number" required="" placeholder="Lingkar Kepala Balita">
+                                @error('kader_id_bumil')
+                                <p class="text-red-500 text-sm mt-2">{{$message}}</p>
+                                @enderror
                             </div>
 
                             <div class="">

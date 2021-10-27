@@ -44,7 +44,7 @@
                     <div x-show="isOpen" class="absolute w-32 bg-white rounded-lg shadow-lg py-2 mt-16">
                         <form class="" method="POST" action="{{ route('logout') }}">
                             @csrf
-                            <button type="submit" class="w-full block px-4 py-2 account-link hover:text-white">Sign Out</button>
+                            <button type="submit" class="w-full block px-4 py-2 hover:bg-blue-600 hover:text-white">Sign Out</button>
                         </form>
                     </div>
                 </div>

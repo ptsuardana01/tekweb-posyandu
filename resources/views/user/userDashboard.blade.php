@@ -3,7 +3,7 @@
     </x-slot>
 
     <x-slot name="search">
-        <div class="container font-sans bg-green-100 rounded mt-8 p-4 md:p-24 text-center">
+        <div class="container font-sans bg-green-100 rounded mt-3 p-4 md:p-24 text-center">
             <h2 class="font-bold break-normal text-2xl md:text-4xl">Cek Data Ibu Hamil Dan Balita</h2>
             <h3 class="font-bold break-normal text-gray-600 text-base md:text-xl">Memastikan ibu hamil dan balita mendapatkan status sehat</h3>
             <div class="w-full text-center pt-4">

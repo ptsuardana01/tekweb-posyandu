@@ -29,10 +29,14 @@
                     </thead>
                     <tbody class="text-gray-700">
 
+                        @php
+                            $n = 1;
+                        @endphp
+
                         @foreach ($bumils as $bumil)
 
                         <tr>
-                            <td class="w-1/3 text-left py-3 px-4">1</td>
+                            <td class="w-1/3 text-left py-3 px-4">{{$n++}}</td>
                             <td class="w-1/3 text-left py-3 px-4">{{$bumil->nama}}</td>
                             <td class="w-1/3 text-left py-3 px-4">{{$bumil->nik}}</td>
                             <td class=" text-left py-3 px-4 text-sm">{{$bumil->tmpt_lahir}}, {{$bumil->tgl_lahir}}</td>

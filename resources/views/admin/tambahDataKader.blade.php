@@ -16,7 +16,7 @@
                         <div class="mb-3">
                             <label class="block text-sm text-gray-600" for="nama">Nama</label>
                             <div class="">
-                                <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="nama" name="nama" type="text" placeholder="Nama Petugas">
+                                <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="nama" name="nama" value="{{old('nama')}}" type="text" placeholder="Nama Petugas">
                                 @error('nama')
                                 <p class="text-red-500 text-sm mt-2">{{$message}}</p>
                                 @enderror
@@ -25,7 +25,7 @@
                         <div class="mb-3">
                             <label class="block text-sm text-gray-600" for="nik">NIK</label>
                             <div class="">
-                                <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="nik" name="nik" type="text" placeholder="NIK Petugas">
+                                <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="nik" name="nik" value="{{old('nik')}}" type="text" placeholder="NIK Petugas">
                                 @error('nik')
                                 <p class="text-red-500 text-sm mt-2">{{$message}}</p>
                                  @enderror
@@ -34,7 +34,7 @@
                         <div class="mb-3">
                             <label class="block text-sm text-gray-600" for="tmpt_lahir">Tempat Lahir</label>
                             <div class="">
-                                <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="tmpt_lahir" name="tmpt_lahir" type="text" placeholder="Tempat Lahir Petugas">
+                                <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="tmpt_lahir" name="tmpt_lahir" value="{{old('tmpt_lahir')}}" type="text" placeholder="Tempat Lahir Petugas">
                                 @error('tmpt_lahir')
                                 <p class="text-red-500 text-sm mt-2">{{$message}}</p>
                                 @enderror
@@ -43,7 +43,7 @@
                         <div class="mb-3">
                             <label class="block text-sm text-gray-600" for="tgl_lahir">Tanggal Lahir</label>
                             <div class="">
-                                <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="tgl_lahir" name="tgl_lahir" type="date" placeholder="">
+                                <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="tgl_lahir" name="tgl_lahir" value="{{old('tgl_lahir')}}" type="date" placeholder="">
                                 @error('tgl_lahir')
                                 <p class="text-red-500 text-sm mt-2">{{$message}}</p>
                                 @enderror
@@ -52,7 +52,7 @@
                         <div class="mb-3">
                             <label class="block text-sm text-gray-600" for="alamat">Alamat</label>
                             <div class="">
-                                <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="alamat" name="alamat" type="text" placeholder="Masukkan Alamat Petugas">
+                                <input class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded" id="alamat" name="alamat" value="{{old('alamat')}}" type="text" placeholder="Masukkan Alamat Petugas">
                                 @error('alamat')
                                 <p class="text-red-500 text-sm mt-2">{{$message}}</p>
                                 @enderror
@@ -61,7 +61,7 @@
                         <div class="mb-3">
                             <label class="block text-sm text-gray-600" for="email">Email</label>
                             <div class="">
-                                <input class="w-full px-5  py-1 text-gray-700 bg-gray-200 rounded" id="email" name="email" type="text" placeholder="Masukkan Email Aktif">
+                                <input class="w-full px-5  py-1 text-gray-700 bg-gray-200 rounded" id="email" name="email" value="{{old('email')}}" type="text" placeholder="Masukkan Email Aktif">
                                 @error('email')
                                 <p class="text-red-500 text-sm mt-2">{{$message}}</p>
                                 @enderror
@@ -70,7 +70,7 @@
                         <div class="mb-3">
                             <label class="block text-sm text-gray-600" for="telp">Telp</label>
                             <div class="">
-                                <input class="w-full px-5  py-1 text-gray-700 bg-gray-200 rounded" id="telp" name="telp" type="tel" placeholder="Masukkan Nomor Telp Aktif">
+                                <input class="w-full px-5  py-1 text-gray-700 bg-gray-200 rounded" id="telp" name="telp" type="tel" value="{{old('telp')}}" placeholder="Masukkan Nomor Telp Aktif">
                                 @error('telp')
                                 <p class="text-red-500 text-sm mt-2">{{$message}}</p>
                                 @enderror
