@@ -40,6 +40,7 @@ class BumilsController extends Controller
             'tmpt_lahir' => ['required', 'max:100'],
             'tgl_lahir' => ['required'],
             'alamat' => ['required', 'max:255'],
+            'umur' => ['required'],
             'telp' => ['required'],
             'email' => ['required', 'max:100'],
             'tb' => ['required'],
@@ -53,9 +54,35 @@ class BumilsController extends Controller
     }
 
 
-    public function show()
+    public function formUpdateBumil($id)
     {
-        return view('admin.tambahDataBumil');
+        $bumils = Bumils::find($id);
+        $kaders = Kaders::all();
+        return view('admin.updateDataBumil', [
+            'bumils' => $bumils,
+            'kaders' => $kaders,
+            'title' => 'Update Data Ibu Hamil'
+        ]);
+    }
+
+
+    public function update(Request $request, $id)
+    {
+        $bumils = Bumils::find($id);
+        $kaders = Kaders::all();
+        $bumils->nama = $request->nama;
+        $bumils->nik = $request->nik;
+        $bumils->tmpt_lahir = $request->tmpt_lahir;
+        $bumils->tgl_lahir = $request->tgl_lahir;
+        $bumils->alamat = $request->alamat;
+        $bumils->umur = $request->umur;
+        $bumils->tb = $request->tb;
+        $bumils->bb = $request->bb;
+        $bumils->lila = $request->lila;
+        $bumils->kader_id_bumil = $request->kader_id_bumil;
+
+        $bumils->save();
+        return redirect('/ibu-hamil');
     }
 
 

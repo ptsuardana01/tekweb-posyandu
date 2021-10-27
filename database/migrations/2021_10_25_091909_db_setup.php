@@ -68,7 +68,7 @@ class DbSetup extends Migration
 
             $table->foreign('kader_id_bumil')->references('id')->on('kaders')
                 ->onUpdate('cascade')->onDelete('cascade');
-        }); 
+        });
     }
 
     /**

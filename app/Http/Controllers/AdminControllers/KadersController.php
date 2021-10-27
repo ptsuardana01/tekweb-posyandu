@@ -21,7 +21,7 @@ class KadersController extends Controller
     public function create()
     {
         $kaders = Kaders::all();
-        return view('admin.kader', [
+        return view('admin.tambahDataKader', [
             'kaders' => $kaders
         ]);
     }
@@ -43,12 +43,30 @@ class KadersController extends Controller
     }
 
 
-    public function show()
+
+    public function formUpdateKader($id)
     {
-        return view('admin.tambahDataKader');
+        $kaders = Kaders::find($id);
+        return view('admin.updateDataKader', [
+            'kaders' => $kaders,
+            'title' => 'Update Data Petugas Posyandu'
+        ]);
     }
 
 
+    public function update(Request $request, $id)
+    {
+        $kaders = Kaders::find($id);
+        $kaders->nama = $request->nama;
+        $kaders->nik = $request->nik;
+        $kaders->tmpt_lahir = $request->tmpt_lahir;
+        $kaders->tgl_lahir = $request->tgl_lahir;
+        $kaders->alamat = $request->alamat;
+        $kaders->email = $request->alamat;
+        $kaders->telp = $request->telp;
+        $kaders->save();
+        return redirect('/petugas-posyandu');
+    }
 
 
     public function destroy($id)
